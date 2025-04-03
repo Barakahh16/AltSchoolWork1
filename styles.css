@@ -1,0 +1,103 @@
+:root {
+    --main-color: rgb(110, 59, 59);
+    --bg-color: rosybrown;
+  }
+  
+  html {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  body {
+    color: var(--main-color);
+    background-color: #e8e4e4;
+  }
+  
+  main {
+    width: 50%;
+    padding-left: 20px;
+  }
+  
+  #image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  #container {
+    display: flex;
+  }
+  
+  #left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  
+  #social-icons a {
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  
+  #social-icons a:hover {
+    background-color: var(--bg-color);
+  }
+  
+  #social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70px;
+  }
+  
+  #bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .go-up {
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  
+  .go-up:hover {
+    background-color: var(--bg-color);
+  }
+  
+  /**adding animations**/
+  header {
+    animation-duration: 2s;
+    animation-name: slide;
+  }
+  
+  @keyframes slide {
+    from {
+      margin-right: 100%;
+    }
+  
+    to {
+      margin-right: 0%;
+    }
+  }
+  
+  h4 {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  
+  
